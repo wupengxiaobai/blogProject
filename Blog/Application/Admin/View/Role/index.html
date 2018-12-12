@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>角色管理</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <style>
+        tr>td {
+            text-align: center;
+        }
+
+        tr>th {
+            text-align: center;
+        }
+
+        .page {
+            text-align: right;
+        }
+
+        .page a,
+        .page .current {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 3px;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 3px;
+            color: gray;
+            background: #fff;
+            text-decoration: none;
+        }
+
+        .page .current,
+        .page a:hover {
+            color: #fff;
+            background: gray;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin-bottom:100px;margin-top:100px;">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">角色管理</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>角色</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="data['list']" id="vo" key='key'>
+                        <tr>
+                            <td>{$key}</td>
+                            <td>{$vo.role_name}</td>
+                            <td>
+                                <gt name='vo.id' value="1">
+                                    <a class="btn btn-sm btn-danger" href="javascript:;" onClick="delconfirm({$vo['id']})">删除</a>
+                                    <a class="btn btn-sm btn-info" href="{:U('edit',array('role_id'=>$vo['id']))}">编辑</a>
+                                    <a class="btn btn-sm btn-warning" href="{:U('permission',array('role_id'=>$vo['id']))}">选择权限</a>
+                                </gt>
+                            </td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page">
+            <notempty name="data['pageStr']">
+                {$data['pageStr']}
+            </notempty>
+            <empty name="data['pageStr']">
+                没有更多数据分页...
+            </empty>
+        </div>
+
+    </div>
+
+    <script>
+        function delconfirm(id) {
+            if (confirm('您确定要删除吗?')) {
+                location.href = '/index.php?m=Admin&c=Role&a=dels&role_id=' + id;
+            }
+        }
+    </script>
+</body>
+
+
+</html>

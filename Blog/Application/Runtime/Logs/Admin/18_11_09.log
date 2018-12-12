@@ -1,0 +1,62 @@
+[ 2018-11-09T08:34:56+08:00 ] 127.0.0.1 /Admin/Moodlies/index.html
+ERR: 1051:Unknown table 'blog_new_list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_moodlies` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE ( 2>1 ) LIMIT 0,2  
+
+[ 2018-11-09T08:42:40+08:00 ] 127.0.0.1 /Admin/Moodlies/index.html
+ERR: Too few arguments to function msubstr(), 2 passed in F:\Blog\Application\Runtime\Cache\Admin\9efcd623135a4b908ab24d5d1545311c.php on line 66 and at least 3 expected
+
+[ 2018-11-09T08:42:50+08:00 ] 127.0.0.1 /Admin/Moodlies/index.html
+ERR: Too few arguments to function msubstr(), 2 passed in F:\Blog\Application\Runtime\Cache\Admin\9efcd623135a4b908ab24d5d1545311c.php on line 66 and at least 3 expected
+
+[ 2018-11-09T08:59:21+08:00 ] 127.0.0.1 /index.php/Admin/Moodlies/del/id/3
+ERR: Think\Controller:sucess方法不存在！
+
+[ 2018-11-09T09:01:10+08:00 ] 127.0.0.1 /Admin/Moodlies/edit/id/2.html
+ERR: 模板不存在:./Application/Admin/View/Moodlies/edit.html
+
+[ 2018-11-09T09:03:18+08:00 ] 127.0.0.1 /Admin/Moodlies/edit/id/2.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-09T11:04:42+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: 1051:Unknown table 'blog_new_list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_knowledge` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE ( 2>1 ) LIMIT 0,2  
+
+[ 2018-11-09T11:04:43+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: 1051:Unknown table 'blog_new_list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_knowledge` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE ( 2>1 ) LIMIT 0,2  
+
+[ 2018-11-09T11:09:02+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-09T11:09:16+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-09T11:09:32+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-09T11:10:47+08:00 ] 127.0.0.1 /Admin/Knowledge/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-09T19:18:45+08:00 ] 127.0.0.1 /Admin/Resume/add.html
+ERR: 模板不存在:./Application/Admin/View/Resume/add.html
+
+[ 2018-11-09T20:13:56+08:00 ] 127.0.0.1 /Admin/Resume/add.html
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_resume` (`name`,`work`,`birthday`,`address`,`email`,`mobilephone`,`qq`,`emotion`,`skill`,`desc`,`whyme`,`avatar`) VALUES ('吴鹏','前端工程师','1995-05-03','浙江温州','18958849752@163.com','18958849752','1308689683','单身','javascript:6|php:6','我是好人','好人一枚','/Public/Upload/2018-11-09/5be57a04e7437.jpg')
+
+[ 2018-11-09T20:14:24+08:00 ] 127.0.0.1 /Admin/Resume/add.html
+ERR: 1364:Field 'myself' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `blog_resume` (`name`,`work`,`birthday`,`address`,`email`,`mobilephone`,`qq`,`emotion`,`skill`,`desc`,`whyme`,`avatar`) VALUES ('吴鹏','前端工程师','1995-05-03','浙江温州','18958849752@163.com','1895884975','1308689683','单身','javascript:6|php:6','我是好人','好人一枚','/Public/Upload/2018-11-09/5be57a2026d6d.jpg')
+
+[ 2018-11-09T20:16:25+08:00 ] 127.0.0.1 /Admin/Resume/add.html
+ERR: 1364:Field 'myself' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `blog_resume` (`name`,`work`,`birthday`,`address`,`email`,`mobilephone`,`qq`,`emotion`,`skill`,`desc`,`whyme`,`avatar`) VALUES ('吴鹏','前端工程师','1995-05-03','浙江温州','18958849752@163.com','1895884975','1308689683','单身','javascript:6|php:6','我是好人','好人一枚','/Public/Upload/2018-11-09/5be57a99c2453.jpg')
+
+[ 2018-11-09T20:17:08+08:00 ] 127.0.0.1 /Admin/Resume/add.html
+ERR: 1364:Field 'myself' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `blog_resume` (`name`,`work`,`birthday`,`address`,`email`,`mobilephone`,`qq`,`emotion`,`skill`,`desc`,`whyme`,`avatar`) VALUES ('吴鹏','前端工程师','1995-05-03','浙江温州','18958849752@163.com','1895884975','1308689683','单身','javascript:6|php:6','我是好人','好人一枚','/Public/Upload/2018-11-09/5be57ac4a845b.jpg')
+
+[ 2018-11-09T22:54:13+08:00 ] 127.0.0.1 /Admin/Resume/editskill.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( skillname = JavaScript )' at line 1
+ [ SQL语句 ] : UPDATE `blog_resume_skill` SET  WHERE ( skillname = JavaScript )
+

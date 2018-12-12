@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        <block name='title'>管理员首页</block>
+    </title>
+    <link rel="stylesheet" href="__ADMIN__/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="__ADMIN__/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="__ADMIN__/css/style.css">
+    <link rel="shortcut icon" href="__ADMIN__/__ADMIN__/images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+
+        <!-- 头部 -->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"><img src="__ADMIN__/images/logo.svg" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="__ADMIN__/images/logo-mini.svg" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <div class="search-field d-none d-md-block">
+                    <form class="d-flex align-items-center h-100" action="#">
+                        <div class="input-group">
+                            <div class="input-group-prepend bg-transparent">
+                                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                            </div>
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="__ADMIN__/images/faces/face1.jpg" alt="image">
+                                <span class="availability-status online"></span>
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-black">{$Think.session.login_msg.username}</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="mdi mdi-cached mr-2 text-success"></i>
+                                修改资料
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:;" onClick='logoutPrompt()' class="dropdown-item" href="#">
+                                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                                退出
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- 信息接收 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                            data-toggle="dropdown">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="count-symbol bg-danger"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <h6 class="p-3 mb-0">未读提醒</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-success">
+                                        <i class="mdi mdi-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">慢生活</h6>
+                                    <p class="text-gray ellipsis mb-0">
+                                        慢生活相关处理
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="mdi mdi-settings"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">碎言碎语</h6>
+                                    <p class="text-gray ellipsis mb-0">
+                                        碎言碎语相关处理
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-info">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">学无止境</h6>
+                                    <p class="text-gray ellipsis mb-0">
+                                        知识相关处理
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="mdi mdi-settings"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">留言板</h6>
+                                    <p class="text-gray ellipsis mb-0">
+                                        留言板相关处理
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="p-3 mb-0 text-center">请尽快处理以上信息</h6>
+                        </div>
+                    </li>
+
+                    <!-- 退出 -->
+                    <li class="nav-item nav-logout d-none d-lg-block">
+                        <a class="nav-link" href="javascript:;" onClick='logoutPrompt()'>
+                            <i class="mdi mdi-power"></i>
+                        </a>
+                    </li>
+
+                    <!-- 回到顶部 -->
+                    <li class="nav-item nav-settings d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <i class="mdi mdi-format-line-spacing"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+
+        <!-- 主体部分 -->
+        <div class="container-fluid page-body-wrapper">
+
+
+            <!-- 左侧导航 -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <a href="#" class="nav-link">
+                            <div class="nav-profile-image">
+                                <img src="__ADMIN__/images/faces/face1.jpg" alt="profile">
+                                <span class="login-status online"></span>
+                            </div>
+                            <div class="nav-profile-text d-flex flex-column">
+                                <span class="font-weight-bold mb-2">{$Think.session.login_msg.username}</span>
+                                <span class="text-secondary text-small">Project Manager</span>
+                            </div>
+                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                        </a>
+                    </li>
+
+                    <!-- 博客基本设置 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{:U('Index/index')}">
+                            <span class="menu-title">博客基本设置</span>
+                            <i class="mdi mdi-ADMIN menu-icon"></i>
+                        </a>
+                    </li>
+
+                    <!-- 关于我 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{:U('About/index')}">
+                            <span class="menu-title">关于我</span>
+                        </a>
+                    </li>
+
+                    <!-- 慢生活 -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#newList" aria-expanded="false" aria-controls="newList">
+                            <span class="menu-title">慢生活</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="newList">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="{:U('NewList/add')}"> 添加慢生活 </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="{:U('NewList/index')}"> 慢生活管理 </a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 碎言碎语 -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#moodlies" aria-expanded="false" aria-controls="moodlies">
+                            <span class="menu-title">碎言碎语</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="moodlies">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="{:U('Moodlies/add')}"> 添加碎言碎语</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="{:U('Moodlies/index')}"> 碎言碎语管理 </a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 学无止境 -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false"
+                            aria-controls="general-pages">
+                            <span class="menu-title">学无止境</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="general-pages">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#"> 添加科目
+                                    </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#"> 科目管理 </a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 我的简历 -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#general-" aria-expanded="false" aria-controls="general-">
+                            <span class="menu-title">我的简历</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="general-">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#"> 添加简历
+                                    </a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#"> 我的简历 </a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 留言板 -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#book" aria-expanded="false" aria-controls="book">
+                            <span class="menu-title">留言板</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="book">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 留言板管理 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#"> 我的简历 </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 右侧主体内容 -->
+            <div class="main-panel">
+                <iframe name="iframe" src="{:U('Index/index')}" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="__ADMIN__/vendors/js/vendor.bundle.base.js"></script>
+    <script src="__ADMIN__/vendors/js/vendor.bundle.addons.js"></script>
+    <script src="__ADMIN__/js/misc.js"></script>
+    <script src="__ADMIN__/js/dashboard.js"></script>
+    <script>
+        function logoutPrompt() {
+            var conf = window.confirm('确定要退出?');
+            if (conf) {
+                window.location.href = '/index.php/Admin/User/login';
+            }
+        }
+
+
+        $(function () {
+            $('.collapse').removeClass('show');
+        })
+    </script>
+</body>
+
+</html>

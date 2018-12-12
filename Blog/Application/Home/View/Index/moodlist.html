@@ -1,0 +1,46 @@
+<extend name='Public:base' />
+<block name="title">我的博客--碎言碎语</block>
+<block name='css'>
+    <link href="__HOME__/css/base.css" rel="stylesheet">
+    <link href="__HOME__/css/mood.css" rel="stylesheet">
+    <link href="__HOME__/css/style.css" rel="stylesheet">
+</block>
+<block name='main'>
+    <div class="moodlist" style="min-height:570px;">
+        <h1 class="t_nav">
+            <span>删删写写，回回忆忆，虽无法行云流水，却也可碎言碎语。</span>
+            <a href="{:U('index')}" class="n1">网站首页</a>
+            <a href="javascript:;" class="n2">碎言碎语</a>
+        </h1>
+        <div class="bloglist">
+
+            <!-- 碎言碎语列表 -->
+            <volist name='data' id="vo">
+                <ul class="arrow_box">
+                    <div class="sy">
+                        <img src="{$vo['picture']}">
+                        <p> {$vo['content']|htmlspecialchars_decode}</p>
+                    </div>
+                    <span class="dateview">{$vo.addtime|date='Y-m-d',###}</span>
+                </ul>
+            </volist>
+
+        </div>
+
+        <div class="my-page">
+            <p style="padding:20px;">共有 {$totalRows} 条[碎言碎语]</p>
+            <empty name='show'>
+                没有更多了...
+            </empty>
+            {$show}
+        </div>
+    </div>
+</block>
+<block name='script'>
+    <script src="__HOME__/js/silder.js"></script>
+    <script>
+        var oTopA = document.getElementById('topnav').getElementsByTagName('a');
+        var obj = oTopA[3];
+        obj.id = 'topnav_current';
+    </script>
+</block>

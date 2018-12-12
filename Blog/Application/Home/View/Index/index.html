@@ -1,0 +1,225 @@
+<extend name="Public:base" />
+
+<block name='css'>
+  <link href="__HOME__/css/base.css" rel="stylesheet">
+  <link href="__HOME__/css/index.css" rel="stylesheet">
+</block>
+
+<block name="title">我的博客</block>
+
+<block name='main'>
+  <div class="banner" data-banner="{$websiteInfo['banner']}">
+    <section class="box">
+      <ul class="texts" data-banner="{$websiteInfo['banner_text']}">
+      </ul>
+      <div class="avatar">
+        <a href="#" data-avatar="{$websiteInfo['avatar']}"><span>{$websiteInfo['avatar_text']}</span></a>
+      </div>
+    </section>
+  </div>
+  <article>
+    <h2 class="title_tj">
+      <p>文章<span>推荐</span></p>
+    </h2>
+    <div class="bloglist left" style="overflow:hidden">
+
+      <!-- 文章列表 -->
+      <volist name='data' id="vo">
+        <div class="article_item">
+          <h3>{$vo.title}</h3>
+          <figure><img src="{$vo.picture}"></figure>
+          <ul style="overflow:hidden;">
+            <div class="content" style="height:91px;overflow:hidden;">{$vo.content|htmlspecialchars_decode|bqsub=###,"</p>"}</div>
+            <a href="<if condition='$vo.pid == 3 '>{:U('newDetail',array('id' => $vo['id']))}<else />{:U('know',array('id' => $vo['id']))}</if>"
+              class="readmore">阅读全文>></a>
+          </ul>
+          <p class="dateview">
+            <span>{$vo.addtime|date='Y-m-d',###}</span>
+            <span>作者：{$vo.author}</span>
+            <span>{$vo.pname}[<a href="javascript:;">{$vo.categoryname}</a>]</span>
+          </p>
+        </div>
+      </volist>
+
+    </div>
+    <aside class="right">
+      <div class="news">
+        <div class="search">
+          <label>
+            <h3 class="search">
+              <p>站内<span>搜索</span></p>
+            </h3>
+            <input type="text" name="search_article" class="search_article" placeholder="请输入关键字, 回车搜索">
+          </label>
+        </div>
+        <h3>
+          <p>最新<span>文章</span></p>
+        </h3>
+        <ul class="rank">
+
+          <!-- 最新文章链接 -->
+          <volist name='newArticle' id='vo'>
+            <li>
+              <a href="<if condition='$vo.pid == 3 '>{:U('newDetail',array('id'=>$vo['id']))}<else />{:U('know',array('id'=>$vo['id']))}</if>"
+                title="{$vo.title}" target="_blank">{$vo.title|msubstr=0,10}<span style="float:right">{$vo.addtime|date='Y-m-d',###}</span>
+              </a>
+            </li>
+          </volist>
+
+        </ul>
+        <h3 class="ph">
+          <p>点击<span>排行</span></p>
+        </h3>
+        <ul class="paih">
+
+          <!-- 文章点击排行 -->
+          <volist name='visitArticle' id='vo'>
+            <li>
+              <a href="<if condition='$vo.pid == 3 '>{:U('newDetail',array('id'=>$vo['id']))}<else />{:U('know',array('id'=>$vo['id']))}</if>"
+                title="{$vo.title}" target="_blank">{$vo.title}<span style="float:right">{$vo.addtime|date='Y-m-d',###}</span></a>
+            </li>
+          </volist>
+
+        </ul>
+        <h3 class="links">
+          <p>友情<span>链接</span></p>
+        </h3>
+        <ul class="website">
+
+          <!-- 友情链接 -->
+          <volist name='friendlyLink' id="vo">
+            <li>
+              <a href='{$vo.link}' target="_blank">{$vo.name}</a>
+            </li>
+          </volist>
+
+
+        </ul>
+
+        <h3 class="links">
+          <p>页面<span style="color:gold">分享</span></p>
+        </h3>
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a
+            class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+          document.getElementById("bdshell_js").src =
+            "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() /
+              3600000)
+        </script>
+        <!-- Baidu Button END -->
+        <a href="javascript:;" title="没事就扫我吧" class="weixin" data-weixin="{$websiteInfo['weixin']}"> </a>
+      </div>
+
+
+
+    </aside>
+  </article>
+</block>
+
+<block name='script'>
+  <script src="__HOME__/js/silder.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    //  处理首页一些网站基本信息
+    (function () {
+      //  处理 头像
+      var url = $('.avatar').find('a').attr('data-avatar');
+      $('.avatar').find('a').css({
+        backgroundImage: 'url(' + url + ')'
+      })
+
+      //  处理banner文字
+      var text = $('.texts').attr('data-banner');
+      var arr = text.split('|');
+      var str = "";
+      for (var key in arr) {
+        str += '<p>' + arr[key] + '</p>';
+      }
+      $('.texts').append(str)
+
+      //  处理bannner 图
+      var bannerlink = $('.banner').attr('data-banner');
+      $('.banner').css({
+        backgroundImage: 'url(' + bannerlink + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      })
+
+      //  处理微信
+      var weixinlink = $('.weixin').attr('data-weixin');
+      $('.weixin').css({
+        backgroundImage: 'url(' + weixinlink + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      })
+
+      //  处理搜索功能
+      $('.search_article').on('keydown', function (ev) {
+        if (ev.keyCode == 13) {
+          $('.article_item').animate({
+            opacity: 'hide',
+            height: 'hide'
+          }, 'hide');;
+          var search_val = $(this).val();
+          //  发送ajax获取搜索文章显示在指定位置
+          $.ajax({
+            url: "{:U('index')}",
+            data: {
+              search_val: search_val
+            },
+            dataType: 'json',
+            success: function (data) {
+              var str = '';
+              if (data['err_code'] == 1) {
+                if (!data['msg']) {
+                  $('.bloglist').html('没有匹配文章! 换个关键词试试...');
+                  return;
+                }
+                if (data['msg'].length) {
+                  for (var key in data['msg']) {
+                    str +=
+                      `<div class="article_item">
+                                      <h3>${data['msg'][key]['title']}</h3>
+                                      <figure><img src="${data['msg'][key]['picture']}"></figure>
+                                      <ul style="overflow:hidden;">
+                                          <div class='content'>${data['msg'][key]['content']}</div>
+                                          <a href="U('${data['msg'][key]['action']}',array('id'=>${data['msg'][key]['id']}))" class="readmore">阅读全文>></a>
+                                      </ul>
+                                      <p class="dateview">
+                                          <span>${data['msg'][key]['addtime']}</span>
+                                          <span>作者：${data['msg'][key]['author']}</span>
+                                          <span>${data['msg'][key]['pname']} [<a href="javascript:;">${data['msg'][key]['categoryname']}</a>]</span>
+                                      </p>
+                                  </div>`
+                  }
+                  $('.bloglist').html(str);
+                  $('.article_item').animate({
+                    opacity: 'show',
+                    height: 'show'
+                  }, 'show');
+                } else {
+                  $('.bloglist').html('没有匹配文章! 换个关键词试试...');
+                }
+              }
+            },
+            error: function (err) {
+              console.log('服务器错误了!')
+            }
+          })
+        }
+      })
+    })()
+  </script>
+
+  <script src="__HOME__/js/silder.js"></script>
+  <script>
+    var oTopA = document.getElementById('topnav').getElementsByTagName('a');
+    var obj = oTopA[0];
+    obj.id = 'topnav_current';
+  </script>
+</block>

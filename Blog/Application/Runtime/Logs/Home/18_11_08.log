@@ -1,0 +1,120 @@
+[ 2018-11-08T01:40:51+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: syntax error, unexpected '<'
+
+[ 2018-11-08T01:42:09+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: syntax error, unexpected '$vo' (T_VARIABLE)
+
+[ 2018-11-08T09:48:14+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getData方法不存在！
+
+[ 2018-11-08T09:52:48+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T09:53:19+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T09:53:20+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T09:53:20+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T09:53:22+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T09:53:23+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getDataFromNew方法不存在！
+
+[ 2018-11-08T10:00:31+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM blog_new_list as t1,blog_menu as t2 WHERE ( t1.category_id = t2.id )' at line 1
+ [ SQL语句 ] : SELECT t1.*,t2.name as FROM blog_new_list as t1,blog_menu as t2 WHERE ( t1.category_id = t2.id ) 
+
+[ 2018-11-08T10:14:03+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: syntax error, unexpected '}'
+
+[ 2018-11-08T10:19:14+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name` FROM `blog_new_list` WHERE ( pid = 3 ) 
+
+[ 2018-11-08T10:19:59+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: Think\Model:getmenuType方法不存在！
+
+[ 2018-11-08T10:28:11+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: syntax error, unexpected end of file
+
+[ 2018-11-08T10:31:22+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY `istop` desc,`addtime` desc' at line 1
+ [ SQL语句 ] : SELECT t1.*,t2.name FROM blog_new_list as t1,blog_menu as t2 WHERE ( t1.category_id = t2.id and  ) ORDER BY `istop` desc,`addtime` desc 
+
+[ 2018-11-08T10:33:33+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY `istop` desc,`addtime` desc' at line 1
+ [ SQL语句 ] : SELECT t1.*,t2.name FROM blog_new_list as t1,blog_menu as t2 WHERE ( t1.category_id = t2.id and  ) ORDER BY `istop` desc,`addtime` desc 
+
+[ 2018-11-08T10:34:20+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY `istop` desc,`addtime` desc' at line 1
+ [ SQL语句 ] : SELECT t1.*,t2.name FROM blog_new_list as t1,blog_menu as t2 WHERE ( t1.category_id = t2.id and  ) ORDER BY `istop` desc,`addtime` desc 
+
+[ 2018-11-08T10:34:32+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist.html/type/5
+ERR: 非法操作:newlist.html
+
+[ 2018-11-08T15:50:43+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: Think\Controller:count方法不存在！
+
+[ 2018-11-08T15:51:17+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: Think\Controller:count方法不存在！
+
+[ 2018-11-08T16:00:01+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/p/2.html
+ERR: 1054:Unknown column 'category.id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `blog_new_list` WHERE ( category.id = 2>1 ) LIMIT 1  
+
+[ 2018-11-08T16:18:14+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: 1054:Unknown column 't1.category_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `blog_new_list` WHERE (  t1.category_id = 8  ) LIMIT 1  
+
+[ 2018-11-08T16:18:40+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/12
+ERR: 1054:Unknown column 't1.category_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `blog_new_list` WHERE (  t1.category_id = 12  ) LIMIT 1  
+
+[ 2018-11-08T16:19:38+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: 1054:Unknown column 'blog_new_list.category_id' in 'where clause'
+ [ SQL语句 ] : SELECT t1.*,t2.name FROM blog_new_list t1 left join blog_menu as t2 on t1.category_id = t2.id  WHERE ( blog_new_list.category_id = 8 ) ORDER BY `istop` desc,`addtime` desc LIMIT 0,2  
+
+[ 2018-11-08T16:20:48+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: 1054:Unknown column 'blog_menu.name' in 'field list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM blog_new_list blog_new_list left join blog_menu as t2 on blog_new_list.category_id = blog_menu.id  WHERE ( blog_new_list.category_id = 8 ) ORDER BY `istop` desc,`addtime` desc LIMIT 0,2  
+
+[ 2018-11-08T16:20:53+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/type/8
+ERR: 1054:Unknown column 'blog_menu.name' in 'field list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM `blog_new_list` left join blog_menu as t2 on blog_new_list.category_id = blog_menu.id  WHERE ( blog_new_list.category_id = 8 ) ORDER BY `istop` desc,`addtime` desc LIMIT 0,2  
+
+[ 2018-11-08T16:20:54+08:00 ] 127.0.0.1 /index.php/Home/Index/newlist/p/1.html
+ERR: 1054:Unknown column 'blog_menu.name' in 'field list'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM `blog_new_list` left join blog_menu as t2 on blog_new_list.category_id = blog_menu.id  WHERE ( 2>1 ) ORDER BY `istop` desc,`addtime` desc LIMIT 0,2  
+
+[ 2018-11-08T17:16:34+08:00 ] 127.0.0.1 /Home/Index/new/id/6.html
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE `id` = '6' LIMIT 1  
+
+[ 2018-11-08T17:19:00+08:00 ] 127.0.0.1 /Home/Index/new/id/6.html
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE `id` = '6' LIMIT 1  
+
+[ 2018-11-08T17:58:08+08:00 ] 127.0.0.1 /Home/Index/new/id/5.html
+ERR: syntax error, unexpected '{'
+
+[ 2018-11-08T20:09:36+08:00 ] 127.0.0.1 /Home/Index/newlist/type/8
+ERR: Undefined class constant 'totalRows'
+
+[ 2018-11-08T20:54:36+08:00 ] 127.0.0.1 /Home/Index/moodlist.html
+ERR: Think\Model:getData方法不存在！
+
+[ 2018-11-08T20:55:16+08:00 ] 127.0.0.1 /Home/Index/moodlist.html
+ERR: Think\Model:getData方法不存在！
+
+[ 2018-11-08T21:10:43+08:00 ] 127.0.0.1 /Home/Index/moodlist.html
+ERR: Too few arguments to function Home\Model\MoodliesModel::getData(), 0 passed in F:\Blog\Application\Home\Controller\IndexController.class.php on line 98 and exactly 1 expected
+
+[ 2018-11-08T21:15:06+08:00 ] 127.0.0.1 /Home/Index/moodlist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'arc,`addtime` desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog_moodlies` ORDER BY istop arc,`addtime` desc 
+

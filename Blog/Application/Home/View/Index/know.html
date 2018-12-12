@@ -1,0 +1,112 @@
+<extend name='Public:base' />
+<block name='title'>我的博客--学无止境</block>
+<block name='css'>
+  <link href="__HOME__/css/base.css" rel="stylesheet">
+  <link href="__HOME__/css/new.css" rel="stylesheet">
+</block>
+
+<block name='main'>
+
+  <article class="blogs">
+    <h1 class="t_nav">
+      <span>您当前的位置：<a href="{:U('index')}">首页</a>&nbsp;&gt;&nbsp;
+        <a href="{:U('knowledge')}">学无止境</a>&nbsp;&gt;&nbsp;<a href="javascript:;"></a></span>
+      <a href="{:U('index')}" class="n1">网站首页</a>
+      <a href="javascript:;" class="n2">学无止境</a>
+    </h1>
+    <div class="index_about">
+      <h2 class="c_titile">{$data['title']}</h2>
+      <p class="box_c">
+        <span class="d_time">发布时间：{$data['addtime']|date='Y-m-d H:i:s',###}</span>
+        <span>编辑：{$data.author}</span>
+      </p>
+      <ul class="infos">
+        <pre>
+          {$data.content|htmlspecialchars_decode=###}
+        </pre>
+      </ul>
+      <div class="keybq">
+        <!-- TODO: 待开发关键词 -->
+        <p><span>关键字词</span></p>
+      </div>
+      <div class="ad"> </div>
+
+      <div class="nextinfo">
+        <p>上一篇：<a href="{:U('know',array('id'=>$arr['prev']['id']))}">{$arr['prev']['title']}</a>
+          <empty name="arr['prev']">没有了...</empty>
+        </p>
+        <p>下一篇：<a href="{:U('know',array('id'=>$arr['next']['id']))}">{$arr['next']['title']}</a>
+          <empty name="arr['next']">没有了...</empty>
+        </p>
+      </div>
+
+      <div class="otherlink">
+        <h2>相关文章</h2>
+        <ul>
+
+          <!-- 相关文章列表 -->
+          <li>
+            <a href="javascript:;" title="现在，我相信爱情！">现在，我相信爱情！</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <aside class="right">
+
+      <!-- Baidu Button BEGIN -->
+      <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a
+          class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
+      <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
+      <script type="text/javascript" id="bdshell_js"></script>
+      <script type="text/javascript">
+        document.getElementById("bdshell_js").src =
+          "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+      </script>
+      <!-- Baidu Button END -->
+      <div class="blank"></div>
+      <div class="news">
+        <h3>
+          <p>最新<span>笔记</span></p>
+        </h3>
+        <ul class="rank">
+          <!-- 最新笔记列表 -->
+          <volist name='newArticle' id="vo">
+            <li>
+              <a href="{:U('know',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|msubstr=0,6}<span style="float:right">{$vo.addtime|date='Y-m-d
+                  H:i:s',###}</a>
+            </li>
+          </volist>
+        </ul>
+        <h3 class="ph">
+          <p>点击<span>排行</span></p>
+        </h3>
+        <ul class="paih">
+          <volist name='visitArticle' id="vo">
+            <li>
+              <a href="{:U('know',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|msubstr=0,6}<span style="float:right">{$vo.addtime|date='Y-m-d
+                  H:i:s',###}</a>
+            </li>
+          </volist>
+        </ul>
+      </div>
+      <div class="visitors">
+        <h3>
+          <p>其它</p>
+        </h3>
+      </div>
+    </aside>
+  </article>
+</block>
+
+<block name='script'>
+  <script src="__HOME__/js/silder.js"></script>
+  <script>
+    var oTopA = document.getElementById('topnav').getElementsByTagName('a');
+    var obj = oTopA[4];
+    obj.id = 'topnav_current';
+  </script>
+
+  
+</block>

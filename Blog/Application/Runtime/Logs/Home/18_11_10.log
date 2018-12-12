@@ -1,0 +1,403 @@
+[ 2018-11-10T09:55:43+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: Call to undefined function htmlspecial_decode()
+
+[ 2018-11-10T09:56:17+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: Call to undefined function htmlspecialcharts_decode()
+
+[ 2018-11-10T10:06:12+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: syntax error, unexpected '<'
+
+[ 2018-11-10T10:06:32+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: Unsupported operand types
+
+[ 2018-11-10T10:06:47+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: Unsupported operand types
+
+[ 2018-11-10T10:06:55+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: syntax error, unexpected '<'
+
+[ 2018-11-10T10:38:14+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `blog_resume_experience` ORDER BY `sort` 
+
+[ 2018-11-10T10:38:26+08:00 ] 127.0.0.1 /Home/Index/resume.html
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `blog_resume_experience` ORDER BY `sort` desc 
+
+[ 2018-11-10T13:30:42+08:00 ] 127.0.0.1 /Home/Index/book.html
+ERR: syntax error, unexpected '}', expecting ';'
+
+[ 2018-11-10T14:02:17+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0032s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('11','1541829737') [ RunTime:0.0590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2018-11-10T14:02:40+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0025s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('11','1541829760') [ RunTime:0.0329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-11-10T14:03:03+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0029s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('11','1541829783') [ RunTime:0.0432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2018-11-10T14:04:10+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0029s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('咳咳','1541829849') [ RunTime:0.0414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-11-10T14:05:03+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0028s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('咳咳','1541829902') [ RunTime:0.0488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2018-11-10T14:05:43+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0033s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('咳咳','1541829943') [ RunTime:0.0429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-11-10T14:07:18+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0028s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('咳咳','1541830038') [ RunTime:0.0413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-11-10T14:09:17+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0011s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('留个脚印','1541830157') [ RunTime:0.0334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2018-11-10T14:14:38+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0006s ]
+SQL: INSERT INTO `blog_book` (`content`,`addtime`) VALUES ('额','1541830478') [ RunTime:0.0411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-11-10T14:29:41+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0008s ]
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('打个比方','18958849752','18958849752@163.com','1541831381')
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('打个比方','18958849752','18958849752@163.com','1541831381')
+
+[ 2018-11-10T14:32:14+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+
+[ 2018-11-10T14:33:48+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+
+[ 2018-11-10T14:36:19+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0025s ]
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试','18958849752','xiaobai@qq.com','1541831778')
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试','18958849752','xiaobai@qq.com','1541831778')
+
+[ 2018-11-10T14:36:57+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0027s ]
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试','18958849752','xiaobai@qq.com','1541831817')
+ERR: 1264:Out of range value for column 'mobilephone' at row 1
+ [ SQL语句 ] : INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试','18958849752','xiaobai@qq.com','1541831817')
+
+[ 2018-11-10T14:38:31+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0029s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试','18958849752','18958849752@163.com','1541831911') [ RunTime:0.0632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2018-11-10T15:04:04+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0024s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('古人云：良言一句三冬暖，恶语伤人六月寒。说话是一门艺术，一是一门技术，话说得好听，往往能让你在人际交往、工作生活中得到不少的助力。但俗话说祸从口出，如果说话不经过大脑，有的时候反而就像是利剑一样伤害到自己。','18958849752','18958849752@163.com','1541833444') [ RunTime:0.0700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2018-11-10T15:05:45+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('最困难的事情就是认识自己。——希腊','18958849752','xiaobai@xiaobai.con','1541833545') [ RunTime:0.0609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-11-10T15:06:16+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('与肝胆人共事，无字句处读书。——周恩来','18958849752','18958849752@163.com','1541833576') [ RunTime:0.0405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-11-10T15:07:20+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('最大的骄傲于最大的自卑都表示心灵的最软弱无力。','18958849752','xiaobai@xiaobai.con','1541833640') [ RunTime:0.0679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-11-10T15:07:49+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('阅读一切好书如同和过去最杰出的人谈话。——笛卡尔','18958849752','xiaobai5@xiaobai.con','1541833669') [ RunTime:0.0606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2018-11-10T15:08:49+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('越是无能的人，越喜欢挑剔别人的错儿。——爱尔兰','18958849752','xiaobai5@xiaobai.con','1541833729') [ RunTime:0.0655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2018-11-10T16:15:46+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: Call to a member function field() on null
+
+[ 2018-11-10T16:19:18+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT `name` FROM `blog_new_list` WHERE `id` = 3 LIMIT 1  
+
+[ 2018-11-10T16:40:10+08:00 ] 127.0.0.1 /Home/Index/know/id/$vo.id
+ERR: 1054:Unknown column '$vo' in 'where clause'
+ [ SQL语句 ] : SELECT blog_Knowledge.*,blog_menu.name FROM `blog_knowledge` left join blog_menu on blog_Knowledge.category_id = blog_menu.id  WHERE ( blog_Knowledge.id=$vo ) LIMIT 1  
+
+[ 2018-11-10T16:42:57+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: XML标签语法错误 : condition='$vo['pid'] == 3'
+
+[ 2018-11-10T16:43:37+08:00 ] 127.0.0.1 /Home/Index/new/id/$vo.id
+ERR: 1054:Unknown column '$vo' in 'where clause'
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE ( blog_new_list.id=$vo ) LIMIT 1  
+
+[ 2018-11-10T17:30:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:57+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:30:59+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T17:32:17+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc 
+
+[ 2018-11-10T17:33:28+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id  ORDER BY `addtime` desc LIMIT 3' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.id,blog_new_list.title,blog_menu.pid FROM `blog_new_list` left join blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3  
+
+[ 2018-11-10T18:37:04+08:00 ] 127.0.0.1 /Home/Index/new/id/5.html
+ERR: Call to a member function findNewArticle() on null
+
+[ 2018-11-10T18:38:20+08:00 ] 127.0.0.1 /Home/Index/new/id/5.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:48:19+08:00 ] 127.0.0.1 /Home/Index/know/id/10
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:48:47+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:48:55+08:00 ] 127.0.0.1 /Home/Index/know/id/10
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:50:20+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:51:45+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:52:38+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:52:39+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:52:39+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:50+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:50+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:50+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:51+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:51+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:51+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:53:51+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:58:11+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:58:11+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T18:58:53+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: Think\Model:findNewArticle方法不存在！
+
+[ 2018-11-10T19:28:17+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0007s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('咳咳, 测试未读数目是否增加','18958849752','18958849752@163.com','1541849297') [ RunTime:0.0498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2018-11-10T19:40:23+08:00 ] 127.0.0.1 /Home/Index/book.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `blog_book` [ RunTime:0.0006s ]
+SQL: INSERT INTO `blog_book` (`content`,`mobilephone`,`email`,`addtime`) VALUES ('测试未读留言红点是否出现','18958849752','18958849752@163.com','1541850022') [ RunTime:0.0556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-11-10T19:58:24+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: 1146:Table 'db_blog.knowledge' doesn't exist
+ [ SQL语句 ] : update Knowledge set lookcount = lookcount+1
+
+[ 2018-11-10T19:58:46+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: :
+ [ SQL语句 ] : update blog_knowledge set lookcount = lookcount+1
+
+[ 2018-11-10T19:59:00+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: :
+ [ SQL语句 ] : update blog_knowledge set lookcount = lookcount+1
+
+[ 2018-11-10T19:59:32+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: :
+ [ SQL语句 ] : update blog_knowledge set lookcount = lookcount+1 where id=10
+
+[ 2018-11-10T19:59:47+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: :
+ [ SQL语句 ] : update blog_knowledge set lookcount = lookcount+1 where id=10
+
+[ 2018-11-10T20:01:33+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=10 )' at line 1
+ [ SQL语句 ] : UPDATE `blog_knowledge` SET  WHERE ( id=10 )
+
+[ 2018-11-10T20:05:14+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=10 )' at line 1
+ [ SQL语句 ] : UPDATE `blog_knowledge` SET  WHERE ( id=10 )
+
+[ 2018-11-10T20:05:28+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=10 )' at line 1
+ [ SQL语句 ] : UPDATE `blog_knowledge` SET  WHERE ( id=10 )
+
+[ 2018-11-10T20:05:29+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=10 )' at line 1
+ [ SQL语句 ] : UPDATE `blog_knowledge` SET  WHERE ( id=10 )
+
+[ 2018-11-10T20:08:43+08:00 ] 127.0.0.1 /Home/Index/know/id/10.html
+ERR: :
+ [ SQL语句 ] : update blog_knowledge set lookcount = lookcount+1 where id=10
+

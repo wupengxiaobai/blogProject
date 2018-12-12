@@ -1,0 +1,114 @@
+<extend name='Public:base' />
+<block name='title'>我的博客--留言板</block>
+<block name='css'>
+    <link href="__HOME__/css/base.css" rel="stylesheet">
+    <link href="__HOME__/css/style.css" rel="stylesheet">
+    <style>
+        .blogs{
+            overflow: hidden;
+        }
+        .blogs .left{
+            float: left;
+            margin-top: 30px;
+            width: 666px;
+            min-height: 390px;
+            width: 100%;
+        }
+        .blogs .left form label{
+            font-size:22px;;
+            font-weight: 600px;
+        }
+        .blogs .left form textarea{
+            margin-top: 10px;
+            padding: 10px;
+            width: calc(100% - 25px);
+            height: 280px;
+            border: 1px solid gainsboro;
+            outline: none;
+            border-radius: 5px;
+        }
+        .blogs .left form input[class=submitbtn],.blogs .left form input[class=buttonbtn]{
+            background: antiquewhite;
+            padding: 5px 10px;
+            color: palevioletred;
+            border: 1px solid antiquewhite;
+            outline:none;
+            cursor: pointer;
+        }
+        .blogs .left form input[class=buttonbtn]{
+            color: gray
+        }
+        .blogs .left form input[class=buttonbtn]:hover{
+            color: #333;
+        }
+        .blogs .left form input[class=submitbtn]:hover{
+            color: deeppink;
+        }
+        .blogs .left form input[type=text]{
+            margin: 5px 0px;
+            width: calc(100% - 25px);
+            padding: 5px 10px;
+            border: 1px solid gainsboro;
+            outline: none;
+            border-radius: 5px;
+        }
+    </style>
+</block>
+<block name='main'>
+    <article class="blogs" style="min-height: 530px;">
+        <h1 class="t_nav">
+            <span> 轻轻地留下你的足迹, 证明你也曾来过.</span>
+            <a href="{:U('index')}" class="n1">网站首页</a>
+            <a href="javascript:;" class="n2">留言板</a>
+        </h1>
+
+
+        <div class="left">
+            <form action="" method="POST">
+                <label for='content'>有说快话, 有印就留. ^_^</label>
+                <textarea name="content" id="content" placeholder="咳咳, 请留步."></textarea>
+                <input type="text" name="mobilephone" placeholder='咳咳, 请留个电话!' />
+                <input type="text" name="email" placeholder='咳咳, 请留个邮箱!' />
+                <input class="submitbtn" type="button" value="提交留言">
+                <input class="buttonbtn" type="button" value="重置">
+            </form>
+        </div>
+    </article>
+</block>
+<block name='script'>
+    <script src="__HOME__/js/silder.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var $subB = $('.submitbtn');
+        var flag = true;
+        $subB.on('click', function () {
+            var data = $('form').serializeArray();
+            if (flag) {
+                $.ajax({
+                    type: "POST",
+                    url: '',
+                    data: data,
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data['err_code'] == 1) {
+                            alert(data['msg']);
+                        } else {
+                            alert(dara['msg']);
+                        }
+                    },
+                    error: function (err) {
+                        alert('ε(┬┬﹏┬┬)3 稳住!');
+                        console.log(err);
+                    }
+                });
+                flag = false;
+            } else {
+                alert('您已经留下足迹了!!! 我们不接收一串又一串脚印<(*￣▽￣*)/');
+            }
+            $('form')[0].reset();
+        })
+        $('.buttonbtn').on('click', function () {
+            $('form')[0].reset();
+        })
+    </script>
+</block>

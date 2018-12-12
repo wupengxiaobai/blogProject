@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历的技能评价修改</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container" style="padding-bottom:50px;">
+        <form action="" method="POST">
+
+            <volist name='skills' id='vo'>
+                <div class="form-group">
+                    <label for="{$vo.skillname}">{$vo.skillname}<small></small></label>
+                    <input type="text" name="{$vo.skillname}" class="form-control" id="{$vo.skillname}" value="{$vo.grade}" placeholder="请输入{$vo.skillname}值">
+                </div>
+            </volist>
+
+            <button type="submit" class="btn btn-info">技能值修改</button>
+            <button type="button" class="btn btn-default" onclick="window.history.go(-1)">返回</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

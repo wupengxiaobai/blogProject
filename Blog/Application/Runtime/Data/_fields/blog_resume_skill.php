@@ -1,0 +1,1 @@
+a:5:{i:0;s:9:"skillname";i:1;s:5:"grade";i:2;s:4:"sort";s:3:"_pk";s:9:"skillname";s:5:"_type";a:3:{s:9:"skillname";s:12:"varchar(255)";s:5:"grade";s:7:"int(11)";s:4:"sort";s:10:"tinyint(4)";}}

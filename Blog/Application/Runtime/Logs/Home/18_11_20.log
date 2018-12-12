@@ -1,0 +1,35 @@
+[ 2018-11-20T16:00:29+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018468s ]
+SQL: SHOW COLUMNS FROM `blog_new_list` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_knowledge` [ RunTime:0.0017s ]
+SQL: SELECT blog_new_list.*,blog_menu.name as categoryname,blog_menu.pid FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE ( istop = 1 )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `blog_menu` WHERE `id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `blog_menu` WHERE `id` = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT blog_knowledge.*,blog_menu.name as categoryname,blog_menu.pid FROM `blog_knowledge` left join blog_menu on blog_knowledge.category_id = blog_menu.id  WHERE ( istop = 1 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `blog_menu` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT blog_new_list.id,blog_new_list.title,blog_new_list.addtime,blog_menu.pid FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT blog_knowledge.id,blog_knowledge.title,blog_knowledge.addtime,blog_menu.pid FROM `blog_knowledge` left join blog_menu on  blog_knowledge.category_id = blog_menu.id  ORDER BY `addtime` desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT blog_new_list.id,blog_new_list.title,blog_new_list.addtime,blog_new_list.lookcount,blog_menu.pid FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  ORDER BY `lookcount` desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT blog_knowledge.id,blog_knowledge.title,blog_knowledge.addtime,blog_knowledge.lookcount,blog_menu.pid FROM `blog_knowledge` left join blog_menu on  blog_knowledge.category_id = blog_menu.id  ORDER BY `lookcount` desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_friendly` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_friendly` LIMIT 5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_info` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_info` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020876s ]
+

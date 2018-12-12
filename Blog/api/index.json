@@ -1,0 +1,145 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "swiperList": [{
+      "id": "001",
+      "url": "https://imgs.qunarzz.com/p/tts0/1811/b9/b35856cd2276902.jpg_750x440_4d1ab843.jpg"
+    }, {
+      "id": "002",
+      "url": "https://imgs.qunarzz.com/p/tts9/1811/dd/7beb83f7deec3702.jpg_750x440_fd0846f1.jpg"
+    }, {
+      "id": "003",
+      "url": "https://imgs.qunarzz.com/p/tts5/1811/57/0148932596570502.jpg_750x440_b5886004.jpg"
+    }, {
+      "id": "004",
+      "url": "https://imgs.qunarzz.com/p/tts7/1811/e4/9a41837746131902.jpg_750x440_d71dee4f.jpg"
+    }, {
+      "id": "005",
+      "url": "https://imgs.qunarzz.com/p/tts7/1811/e4/9a41837746131902.jpg_750x440_d71dee4f.jpg"
+    }],
+    "menuList": [{
+        "id": "1",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/group.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "签证 · WiFi"
+      }, {
+        "id": "2",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/freetrip.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "出境游"
+      }, {
+        "id": "3",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/cruise.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "一日游"
+      }, {
+        "id": "4",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "美食林"
+      }, {
+        "id": "5",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/group.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "汽车票"
+      }, {
+        "id": "6",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/freetrip.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "国内游"
+      }, {
+        "id": "7",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/cruise.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "超级巴士"
+      }, {
+        "id": "8",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "攻略"
+      }, {
+        "id": "9",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "第二块"
+      }, {
+        "id": "10",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "第二块"
+      }, {
+        "id": "11",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "第二块"
+      }, {
+        "id": "12",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "第二块"
+      }, {
+        "id": "13",
+        "icon_url": "https://s.qunarzz.com/vacation_react/outbround/c2b.png",
+        "link_url": "http://132.232.27.121",
+        "icon_desc": "第二块"
+      }],
+    "weekList": [{
+      "id": 1,
+      "imgUrl": "https://imgs.qunarzz.com/p/p15/1809/19/494898a39defb102.jpg_375x234_45bb45bd.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天"
+    }, {
+      "id": 2,
+      "imgUrl": "https://imgs.qunarzz.com/p/p15/1809/19/494898a39defb102.jpg_375x234_45bb45bd.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天"
+    }, {
+      "id": 3,
+      "imgUrl": "https://imgs.qunarzz.com/p/p15/1809/19/494898a39defb102.jpg_375x234_45bb45bd.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天"
+    }, {
+      "id": 4,
+      "imgUrl": "https://imgs.qunarzz.com/p/p15/1809/19/494898a39defb102.jpg_375x234_45bb45bd.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天"
+    }, {
+      "id": 5,
+      "imgUrl": "https://imgs.qunarzz.com/p/p15/1809/19/494898a39defb102.jpg_375x234_45bb45bd.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天"
+    }],
+    "recommendList": [{
+      "id": 1,
+      "imgUrl": "https://imgs.qunarzz.com/p/tts3/1811/21/5a62e3dadf0b3902.jpg_180x120_bdb9f56c.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天",
+      "seedetaillUrl": "javascript:;"
+    }, {
+      "id": 2,
+      "imgUrl": "https://imgs.qunarzz.com/p/tts3/1811/21/5a62e3dadf0b3902.jpg_180x120_bdb9f56c.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天",
+      "seedetaillUrl": "javascript:;"
+    }, {
+      "id": 3,
+      "imgUrl": "https://imgs.qunarzz.com/p/tts3/1811/21/5a62e3dadf0b3902.jpg_180x120_bdb9f56c.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天",
+      "seedetaillUrl": "javascript:;"
+    }, {
+      "id": 4,
+      "imgUrl": "https://imgs.qunarzz.com/p/tts3/1811/21/5a62e3dadf0b3902.jpg_180x120_bdb9f56c.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天",
+      "seedetaillUrl": "javascript:;"
+    }, {
+      "id": 5,
+      "imgUrl": "https://imgs.qunarzz.com/p/tts3/1811/21/5a62e3dadf0b3902.jpg_180x120_bdb9f56c.jpg",
+      "title": "打卡鼓浪屿网红店 厦门双飞5天",
+      "desc": "打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天打卡鼓浪屿网红店 往返机票+宿鼓浪屿+轻奢酒店+赠鼓浪屿一日游 厦门双飞5天",
+      "seedetaillUrl": "javascript:;"
+    }]
+  }
+}

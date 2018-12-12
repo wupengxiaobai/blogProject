@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="__PUBLIC__/plugin/bootstrap/css/bootstrap.min.css">
+    <title>类别管理</title>
+    <style>
+        tr>th,
+        tr>td {
+            text-align: center;
+        }
+        .page {
+            text-align: right;
+        }
+        .page a,.page .current {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 3px;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 3px;
+            color: gray;
+            background: #fff;
+            text-decoration: none;
+        }
+        .page .current,.page a:hover{
+            color: #fff;
+            background: gray;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="padding:20px;">
+        <form action="" method="get" style="overflow: hidden;">
+            <div class="input-group pull-right" style="margin:10px 20px;width:300px;">
+                <input type="text" name="search_val" class="form-control" placeholder="根据中文搜索">
+                <span class="input-group-btn">
+                    <button class="search btn btn-success" type="submit">Search</button>
+                </span>
+            </div>
+        </form>
+
+        <notempty name='data'>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="success">
+                        <th>序号</th>
+                        <th>名称(中文)</th>
+                        <th>名称(英文)</th>
+                        <th>父类名</th>
+                        <th>描述</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name='data' id='vo' key='key'>
+                        <tr>
+                            <td>{$key}</td>
+                            <td>{$vo['name']}</td>
+                            <td>{$vo['enname']}
+                                <empty name="vo['enname']">未设置子标题(英)</empty>
+                            </td>
+                            <td>
+                                <if condition='$vo.pid == 3 '>慢生活
+                                    <else />学无止境
+                                </if>
+                            </td>
+                            <td>{$vo['desc']}</td>
+                            <td>
+                                <button class="del btn btn-danger btn-xs" onClick="delConfirm({$vo['id']})">删除</button>
+                                <a href="{:U('edit',array('id'=>$vo['id']))}" class="btn btn-info btn-xs">编辑</a>
+                            </td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </notempty>
+
+        <empty name='show'>
+            <p style="text-align:center;">没有更多数据...</p>
+        </empty>
+
+
+        <div class="page">
+            <notempty name='show'>
+                {$show} 共有 {$totalRows} 条数据
+            </notempty>
+        </div>
+    </div>
+
+    <script src="__ADMIN__/vendors/js/vendor.bundle.base.js"></script>
+    <script>
+        function delConfirm(id) {
+            var delOk = window.confirm('确定要删除该条信息?');
+            if (delOk) {
+                window.location.href = '/index.php?m=Admin&c=Menu&a=del&id=' + id;
+            }
+        }
+    </script>
+</body>
+
+</html>

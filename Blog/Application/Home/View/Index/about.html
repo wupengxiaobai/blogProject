@@ -1,0 +1,38 @@
+<extend name='Public:base' />
+
+<block name='title'>
+    我的博客--关于我
+</block>
+
+<block name='css'>
+    <link href="__HOME__/css/base.css" rel="stylesheet">
+    <link href="__HOME__/css/about.css" rel="stylesheet">
+</block>
+
+<block name='main'>
+    <article class="aboutcon" style="min-height: 530px;">
+        <h1 class="t_nav"><span>像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span>
+            <a href="{:U('index')}" class="n1">网站首页</a>
+            <a href="javascript:;" class="n2">关于我</a>
+        </h1>
+        <div class="about left" style="min-height:420px;">
+            <h2>{$about['title']}</h2>
+            {$about['content']}
+        </div>
+        <aside class="right">
+            <div class="about_c">
+                <p>网名：<span>{$about['nickname']}</span> | {$about['enname']}</p>
+                <p>姓名：{$about['truename']} </p>
+                <p>生日：{$about['birthday']}</p>
+                <p>籍贯：{$about['native']}</p>
+                <p>现居：{$about['address']}</p>
+                <p>职业：{$about['profession']}</p>
+                <p>爱好：{$about['hobbies']}</p>
+            </div>
+        </aside>
+    </article>
+</block>
+
+<block name='script'>
+    <script src="__HOME__/js/silder.js"></script>
+</block>

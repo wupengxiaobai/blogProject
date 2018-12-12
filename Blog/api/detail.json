@@ -1,0 +1,26 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "飘向北方(SSSSS旅游级别)",
+    "bannerImgs": "https://img1.qunarzz.com/p/tts1/1804/9b/392d8ad6eb068302.jpg_r_640x420x90_ca21e2fb.jpg",
+    "gallaryImgs": ["https://img1.qunarzz.com/p/tts1/1804/9b/392d8ad6eb068302.jpg_r_1280x840x90_ecdd94bf.jpg", "https://img1.qunarzz.com/p/tts0/1801/bc/cee749d9d4bf6c02.jpg_r_1280x840x90_951e8e7a.jpg", "https://img1.qunarzz.com/p/tts2/1702/ff/44906cef36763a02.jpg_r_1280x840x90_1cde6514.jpg"],
+    "categoryList": [{
+      "title": "一级标题",
+      "cont": "一级内容",
+      "children": [{
+        "title": "二级标题",
+        "cont": "二级内容"
+      }]
+    }, {
+      "title": "一级标题",
+      "cont": "一级内容",
+      "children": [{
+        "title": "二级标题",
+        "cont": "二级内容"
+      }, {
+        "title": "二级标题",
+        "cont": "二级内容"
+      }]
+    }]
+  }
+}

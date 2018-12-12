@@ -1,0 +1,110 @@
+[ 2018-11-07T08:59:19+08:00 ] 127.0.0.1 /index.php/Admin/User/login.html
+ERR: 无法加载控制器:User
+
+[ 2018-11-07T09:52:27+08:00 ] 127.0.0.1 /index.php/Admin/User/login.html
+ERR: 无法加载控制器:User
+
+[ 2018-11-07T13:00:38+08:00 ] 127.0.0.1 /index.php/Admin/User/login.html
+ERR: 1146:Table 'db_blog.bloguser' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `bloguser`
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/vendors/iconfonts/mdi/css/materialdesignicons.min.css
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/vendors/css/vendor.bundle.base.css
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/images/logo-mini.svg
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/css/style.css
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/vendors/js/vendor.bundle.base.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/images/logo.svg
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/js/misc.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/vendors/js/vendor.bundle.addons.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/js/off-canvas.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/js/dashboard.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/images/dashboard/circle.svg
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:24:14+08:00 ] 127.0.0.1 /index.php/Admin/Index/__HOME__/js/dashboard.js
+ERR: 非法操作:__HOME__
+
+[ 2018-11-07T13:30:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/pages/ui-features/buttons.html
+ERR: 非法操作:pages
+
+[ 2018-11-07T13:40:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/pages/ui-features/buttons.html
+ERR: 非法操作:pages
+
+[ 2018-11-07T13:44:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:44:54+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected 'username' (T_STRING), expecting ',' or ')'
+
+[ 2018-11-07T13:48:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:15+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:31+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:50+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:51+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:51+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T13:48:51+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+ERR: syntax error, unexpected ')'
+
+[ 2018-11-07T14:46:57+08:00 ] 127.0.0.1 /index.php/Admin/dadasdadas
+ERR: 模板不存在:./Application/Admin/View/Dadasdadas/404.html
+
+[ 2018-11-07T18:37:36+08:00 ] 127.0.0.1 /index.php/Admin/About/index.html
+ERR: Think\Model:findData方法不存在！
+
+[ 2018-11-07T18:42:53+08:00 ] 127.0.0.1 /index.php/Admin/About/index.html
+ERR: Think\Model:findData方法不存在！
+
+[ 2018-11-07T21:41:27+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 3 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog_menu` WHERE ( pid == 3 ) 
+
+[ 2018-11-07T21:46:14+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 模板不存在:./Application/Admin/View/Array.html
+
+[ 2018-11-07T21:46:16+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 模板不存在:./Application/Admin/View/Array.html
+
+[ 2018-11-07T21:46:17+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 模板不存在:./Application/Admin/View/Array.html
+

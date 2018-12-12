@@ -1,0 +1,47 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container" style="margin-bottom:100px;">
+        <form action="<?php echo U('index');?>" method="POST">
+            <div class="form-group">
+                <label for="title">关于我 <small>[标题]</small></label>
+                <input type="text" name="title" class="form-control" id="title" value="<?php echo ($data['title']); ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="content">关于我 <small>[内容]</small></label>
+                <textarea id="editor" type="text" name="content" id="content"><?php echo ($data['content']); ?></textarea>
+            </div>
+            <input type="hidden" name="id" value="<?php echo ($data['id']); ?>">
+            <input type="submit" class="btn btn-success" value="保存" />
+            <input type="reset" class="btn btn-default reset" value="重置" />
+
+        </form>
+    </div>
+
+
+
+    <script src="/Public/plugin/ueditor/ueditor.config.js"></script>
+    <script src="/Public/plugin/ueditor/ueditor.all.min.js"></script>
+    <script src="/Public/plugin/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script>
+        var ed = UE.getEditor('editor', {
+            //  取消自动保存
+            enableAutoSave: false
+        });
+    </script>
+</body>
+
+</html>

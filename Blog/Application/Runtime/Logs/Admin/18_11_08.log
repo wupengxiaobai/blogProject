@@ -1,0 +1,79 @@
+[ 2018-11-08T00:21:40+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: Function name must be a string
+
+[ 2018-11-08T00:22:51+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: Function name must be a string
+
+[ 2018-11-08T00:53:39+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 1146:Table 'db_blog.blog_new_list' doesn't exist
+ [ SQL语句 ] : INSERT INTO `blog_new_list` (`title`,`author`,`content`,`category_id`,`istop`,`picture`,`hasfile`,`addtime`) VALUES ('测试日记一篇','懵宝','&lt;p style=&quot;text-align: center;&quot;&gt;我是来测试日记的, 谢谢!&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0004.gif&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20181108/1541609394232356.jpg&quot; title=&quot;1541609394232356.jpg&quot; alt=&quot;computed.jpg&quot; width=&quot;690&quot; height=&quot;349&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;来而不往非礼也!&lt;/strong&gt;&lt;/p&gt;','8','1','/Public/Upload/2018-11-08/5be318939d6cd.jpg','1','1541609619')
+
+[ 2018-11-08T00:54:33+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: Think\Model:addData方法不存在！
+
+[ 2018-11-08T00:54:53+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: Think\Model:addData方法不存在！
+
+[ 2018-11-08T00:56:09+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: Think\Model:addData方法不存在！
+
+[ 2018-11-08T00:59:29+08:00 ] 127.0.0.1 /index.php/Admin/NewList/add.html
+ERR: 1146:Table 'db_blog.blog_new_list' doesn't exist
+ [ SQL语句 ] : INSERT INTO `blog_new_list` (`title`,`author`,`content`,`category_id`,`istop`,`picture`,`hasfile`,`addtime`) VALUES ('测试日记一篇','懵宝','&lt;p style=&quot;text-align: center;&quot;&gt;我是来测试日记的, 谢谢!&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0004.gif&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20181108/1541609394232356.jpg&quot; title=&quot;1541609394232356.jpg&quot; alt=&quot;computed.jpg&quot; width=&quot;690&quot; height=&quot;349&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;来而不往非礼也!&lt;/strong&gt;&lt;/p&gt;','8','1','/Public/Upload/2018-11-08/5be319f160815.jpg','1','1541609969')
+
+[ 2018-11-08T13:03:57+08:00 ] 127.0.0.1 /index.php/Admin/NewList/edit/id/6.html
+ERR: XML标签语法错误 : condition='$vo['id'] == $data['category_id'] '
+
+[ 2018-11-08T13:04:12+08:00 ] 127.0.0.1 /index.php/Admin/NewList/edit/id/6.html
+ERR: XML标签语法错误 : condition='vo['id'] == data['category_id'] '
+
+[ 2018-11-08T19:27:24+08:00 ] 127.0.0.1 /Admin/NewList/index.html?search_val=311
+ERR: 1146:Table 'db_blog.blog_new_list,blog_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `blog_new_list,blog_menu`
+
+[ 2018-11-08T19:27:33+08:00 ] 127.0.0.1 /Admin/NewList/index.html
+ERR: 1146:Table 'db_blog.blog_new_list,blog_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `blog_new_list,blog_menu`
+
+[ 2018-11-08T19:28:53+08:00 ] 127.0.0.1 /Admin/NewList/index.html
+ERR: 1146:Table 'db_blog.blog_new_list,' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `blog_new_list,`
+
+[ 2018-11-08T19:31:54+08:00 ] 127.0.0.1 /Admin/NewList/index.html?search_val=222
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and 222 )' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE (  and 222 ) 
+
+[ 2018-11-08T19:34:54+08:00 ] 127.0.0.1 /Admin/NewList/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and 2>1 )' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE (  and 2>1 ) 
+
+[ 2018-11-08T19:40:13+08:00 ] 127.0.0.1 /Admin/NewList/index.html?search_val=%E6%85%A2%E7%94%9F%E6%B4%BB
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'get.search_val')%' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `blog_new_list` WHERE ( title like '%I('get.search_val')%' ) LIMIT 1  
+
+[ 2018-11-08T19:42:19+08:00 ] 127.0.0.1 /Admin/NewList/index.html?search_val=%E6%85%A2%E7%94%9F%E6%B4%BB
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title like '%慢生活%' ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE (  and title like '%慢生活%' ) LIMIT 0,10  
+
+[ 2018-11-08T19:43:47+08:00 ] 127.0.0.1 /index.php/Admin/NewList/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and 2>1 ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE (  and 2>1 ) LIMIT 0,10  
+
+[ 2018-11-08T19:44:01+08:00 ] 127.0.0.1 /Admin/NewList/index.html?search_val=%E6%85%A2%E7%94%9F%E6%B4%BB
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title like '%慢生活%' ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT blog_new_list.*,blog_menu.name as type FROM `blog_new_list` left join blog_menu on blog_new_list.category_id = blog_menu.id  WHERE (  and title like '%慢生活%' ) LIMIT 0,10  
+
+[ 2018-11-08T20:01:40+08:00 ] 127.0.0.1 /Admin/NewList/index/p/1.html?search_val=%E6%97%A5%E8%AE%B0
+ERR: syntax error, unexpected '!', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2018-11-08T20:04:20+08:00 ] 127.0.0.1 /Admin/NewList/index/p/1.html?search_val=%27%E6%85%A2%27
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '慢'%' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `blog_new_list` WHERE ( title like '%'慢'%' ) LIMIT 1  
+
+[ 2018-11-08T20:41:28+08:00 ] 127.0.0.1 /Admin/Moodlies/add.html
+ERR: Think\Model:addData方法不存在！
+
+[ 2018-11-08T20:44:12+08:00 ] 127.0.0.1 /Admin/Moodlies/add.html
+ERR: 1054:Unknown column 'istop' in 'field list'
+ [ SQL语句 ] : INSERT INTO `blog_moodlies` (`content`,`istop`,`addtime`) VALUES ('&lt;p&gt;222&lt;/p&gt;','1','1541681052')
+

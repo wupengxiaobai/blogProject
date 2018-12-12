@@ -1,0 +1,129 @@
+<extend name='Public:base' />
+
+<block name='css'>
+  <link href="__HOME__/css/base.css" rel="stylesheet">
+  <link href="__HOME__/css/style.css" rel="stylesheet">
+</block>
+
+<block name='main'>
+  <article class="blogs">
+    <h1 class="t_nav">
+      <span>“慢生活”不是懒惰，放慢速度不是拖延时间，而是让我们在生活中寻找到平衡。</span>
+      <a href="{:U('index')}" class="n1">网站首页</a>
+      <a href="javascript:;" class="n2">慢生活</a>
+    </h1>
+    <div class="newblog left" style="min-height:470px;">
+
+      <!-- 慢生活列表 -->
+      <volist name='newlist' id="vo">
+        <div class="new-item">
+          <h2>{$vo.title}</h2>
+          <p class="dateview">
+            <span>发布时间：{$vo.addtime|date='Y-m-d H:i:s',###}</span>
+            <span>作者：{$vo.author}</span>
+            <span>分类：[<a href="javascript:;">{$vo.name}</a>]</span>
+          </p>
+          <figure><img src="{$vo.picture}"></figure>
+          <ul class="nlist" style="overflow:hidden">
+            <div class='content'>
+              {$vo.content|htmlspecialchars_decode=###|bqsub=###,"</p>"}
+            </div>
+            <a href="{:U('newDetail',array('id'=>$vo['id']))}" target="" class="readmore">阅读全文>></a>
+          </ul>
+          <div class="line"></div>
+        </div>
+      </volist>
+      <p style="padding:20px;">共有 {$totalRows} 条[慢生活系列]</p>
+      <div class="my-page">
+        <empty name='show'>
+          没有更多了...
+        </empty>
+        {$show}
+      </div>
+
+    </div>
+    <aside class="right">
+      <div class="rnav">
+        <ul>
+          <!-- 慢生活类别 -->
+          <volist name='newType' key='key' id="vo">
+            <li class="rnav{$key}">
+              <a href="{:U('newlist',array('type'=>$vo['id']))}" target="">{$vo.name}</a>
+            </li>
+          </volist>
+        </ul>
+      </div>
+      <div class="news">
+        <h3>
+          <p>最新<span>生活</span></p>
+        </h3>
+        <ul class="rank">
+
+          <!-- 最新慢生活 -->
+          <volist name='newArticle' id="vo">
+            <li>
+              <a href="{:U('newDetail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|msubstr=0,6}<span
+                  style="float:right">{$vo.addtime|date='Y-m-d H:i:s',###}</a>
+            </li>
+          </volist>
+        </ul>
+        <empty name='visitArticle'>
+          <ul>
+            <li style="border: none;text-align: center">
+              没有更多相关文章
+            </li>
+          </ul>
+        </empty>
+        <h3 class="ph">
+          <p>点击<span>排行</span></p>
+        </h3>
+        <ul class="paih">
+
+          <!-- 排行慢生活 -->
+          <volist name='visitArticle' id="vo">
+            <li>
+              <a href="{:U('newDetail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|msubstr=0,6}<span
+                  style="float:right">{$vo.addtime|date='Y-m-d H:i:s',###}</a>
+            </li>
+          </volist>
+        </ul>
+        <empty name='visitArticle'>
+          <ul>
+            <li style="border: none;text-align: center">
+              没有更多相关文章
+            </li>
+          </ul>
+        </empty>
+      </div>
+      <div class="visitors">
+        <h3>
+          <p>页面分享</p>
+        </h3>
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a
+            class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+          document.getElementById("bdshell_js").src =
+            "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() /
+              3600000)
+        </script>
+        <!-- Baidu Button END -->
+      </div>
+    </aside>
+  </article>
+</block>
+
+<block name='script'>
+  <script src="__HOME__/js/silder.js"></script>
+  <script>
+    var oTopA = document.getElementById('topnav').getElementsByTagName('a');
+    var obj = oTopA[2];
+    obj.id = 'topnav_current';
+  </script>
+
+
+
+
+</block>

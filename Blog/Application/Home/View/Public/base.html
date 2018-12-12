@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        <block name='title'>我的博客</block>
+
+    </title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="主题的个人博客, 优雅、稳重、大气,低调。" />
+
+    <block name='css'></block>
+    <!--[if lt IE 9]>
+<script src="__HOME__/js/modernizr.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <header>
+        <div id="logo" data-logo="{$websiteInfo['logo']}"><a href="{:U('index')}"></a></div>
+        <nav class="topnav" id="topnav">
+            <a href="{:U('index')}"><span>首页</span><span class="en">Protal</span></a>
+            <a href="{:U('about')}"><span>关于我</span><span class="en">About</span></a>
+            <a href="{:U('newlist')}"><span>慢生活</span><span class="en">Life</span></a>
+            <a href="{:U('moodlist')}"><span>碎言碎语</span><span class="en">Doing</span></a>
+            <a href="{:U('knowledge')}"><span>学无止境</span><span class="en">Learn</span></a>
+            <a href="{:U('resume')}"><span>博主简历</span><span class="en">Resume</span></a>
+            <a href="{:U('book')}"><span>留言板</span><span class="en">Gustbook</span></a>
+        </nav>
+    </header>
+
+    <block name='main'></block>
+
+    <footer>
+        <p>Everything is possible
+            <span style="color:red;">❤</span> - Go for
+            <a href="{:U('Admin/User/login')}" target="_blank" title="进入管理员">admin</a>
+        </p>
+    </footer>
+
+    <block name='script'></block>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var loginUrl = $('#logo').attr('data-logo');
+        $('#logo').find('a').css({
+            backgroundImage: 'url(' + loginUrl + ')',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+        })
+    </script>
+</body>
+
+</html>
